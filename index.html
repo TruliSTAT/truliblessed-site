@@ -133,12 +133,12 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="hero">
   <picture><source srcset="/assets/logo-wordmark.webp" type="image/webp"><img class="logo" src="/assets/logo-wordmark.png" alt="Truli Blessed" width="600" height="200" fetchpriority="high"></picture>
-  <p class="eyebrow">Animated Bible stories · The whole Bible in a year · Into the light</p>
+  <p class="eyebrow">Animated Bible stories · The whole Bible in a year</p>
   <h1>A Light to <span>Glory</span></h1>
-  <p class="sub">One year. One big story. One little light. <strong>A Light to Glory</strong> is an animated Bible-in-a-year series for teens, families and the grown-ups beside them, with daily Bible verses and real talk along the way.</p>
+  <p class="sub">One year. One big story. One little light. This is an animated Bible-in-a-year series for teens, families and the grown-ups beside them, with daily Bible verses and real talk along the way.</p>
   <div class="countdown-card">
     <p class="label">Episode 1, <em>“Let There Be Light,”</em> premieres <strong>Christmas Day · Dec 25, 2026</strong></p>
-    <div id="countdown" class="countdown" role="timer" aria-label="Countdown to the A Light to Glory premiere">
+    <div id="countdown" class="countdown" role="timer" aria-label="Countdown to the premiere of A Light to Glory">
       <div><span id="d">--</span><small>days</small></div>
       <div><span id="h">--</span><small>hours</small></div>
       <div><span id="m">--</span><small>min</small></div>
@@ -147,19 +147,28 @@
   </div>
   <a class="btn" href="#join">Get in early</a>
 </header>
+<nav class="topnav homenav" aria-label="Main">
+  <ul><li><a href="/a-light-to-glory/">A Light to Glory</a></li><li><a href="/today/">Today</a></li><li><a href="/verses/">Verses</a></li><li><a href="/advent/">Family Advent</a></li><li><a href="/quiz/">Quiz</a></li></ul>
+</nav>
 
 <main id="main">
 <section class="advent" aria-labelledby="crew">
   <div class="chars">
     <figure><picture><source srcset="/assets/pip_the_lamb.webp" type="image/webp"><img src="/assets/pip_the_lamb.png" alt="Pip the Lamb, a small white lamb, star of A Light to Glory" width="220" height="220" loading="lazy" decoding="async"></picture><figcaption><b>Pip</b> Brave. A little sarcastic. All heart.</figcaption></figure>
-    <figure><picture><source srcset="/assets/lumi_the_firefly.webp" type="image/webp"><img src="/assets/lumi_the_firefly.png" alt="Lumi the Firefly, a glowing firefly who carries the light" width="220" height="220" loading="lazy" decoding="async"></picture><figcaption><b>Lumi</b> Wise, witty, and carries the light.</figcaption></figure>
+    <figure><picture><source srcset="/assets/lumi_the_firefly.webp" type="image/webp"><img src="/assets/lumi_the_firefly.png" alt="Lumi the Firefly, a glowing firefly who narrates the verses and leads the prayers" width="220" height="220" loading="lazy" decoding="async"></picture><figcaption><b>Lumi</b> Wise, witty, and always glowing.</figcaption></figure>
     <figure><picture><source srcset="/assets/wren_the_sparrow.webp" type="image/webp"><img src="/assets/wren_the_sparrow.png" alt="Wren the Sparrow, a small brown sparrow with a plan" width="220" height="220" loading="lazy" decoding="async"></picture><figcaption><b>Wren</b> Anxious. Loyal. Always has a plan.</figcaption></figure>
   </div>
   <div>
     <h2 id="crew">Meet Pip the Lamb and Lumi the Firefly</h2>
-    <p>Pip is a young lamb with more courage than sense. Lumi is the firefly who has seen it all and still lights the way. Together they step into the biggest story ever told, from the first light of Creation to the Light of the World, in <a href="/a-light-to-glory/">A Light to Glory, our animated Bible in a year</a>.</p>
+    <p>Pip is a young lamb with more courage than sense. Lumi is the firefly who has seen it all and still shows the way. Together they step into the biggest story ever told, from Creation to the manger and beyond, in our animated Bible in a year, <a href="/a-light-to-glory/">A Light to Glory</a>.</p>
     <blockquote>“Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.” <cite>Matthew 5:16 KJV</cite></blockquote>
   </div>
+</section>
+
+<section class="spark-home" aria-labelledby="sparkh">
+  <h2 id="sparkh">Lumi's Spark of the Day</h2>
+  <div class="spark-card"><p class="spark-kicker">✦ Today's verse</p><blockquote id="home-spark">“Now faith is the substance of things hoped for, the evidence of things not seen.” <cite>Hebrews 11:1 KJV</cite></blockquote></div>
+  <a class="btn" href="/today/">Get today's story &amp; prayer</a>
 </section>
 
 <section class="cards" aria-labelledby="explore">
@@ -167,6 +176,8 @@
   <div class="grid3">
     <article><h3><a href="/a-light-to-glory/">Bible in a year for teens and families</a></h3><p>Short animated episodes walk through Scripture from Genesis to Revelation, one story at a time, all year long.</p></article>
     <article><h3><a href="/daily-verse/">Daily Bible verse for teens</a></h3><p>A KJV verse a day plus a line of Christian motivation, made for school mornings, group chats and lock screens.</p></article>
+    <article><h3><a href="/verses/">Bible verses by topic</a></h3><p>Anxiety, fear, hope, friendship, school stress and more: three KJV verses and a prayer for each.</p></article>
+    <article><h3><a href="/quiz/">Which Bible hero are you?</a></h3><p>A five-question quiz for teens and grown-ups. Nothing is saved or sent.</p></article>
     <article><h3><a href="/advent/">Advent devotional for families</a></h3><p>Our Family Advent Adventure starts <strong>Thanksgiving Day, November 26</strong> and counts down to the Christmas Day premiere.</p></article>
   </div>
 </section>
@@ -181,9 +192,10 @@
     <input id="name" name="name" placeholder="Your first name" autocomplete="given-name">
     <label class="sr" for="email">Email</label>
     <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+    <label class="age"><input type="checkbox" name="age18" value="yes" required> I am 18 or older and signing up as a parent or guardian.</label>
     <button class="btn" type="submit">Count me in</button>
   </form>
-  <p class="fine">Opens your email app to send your sign-up to truliblessedim@gmail.com.</p>
+  <p class="fine">Opens your email app to send your sign-up to truliblessedim@gmail.com. Kids under 13 should not submit this form.</p>
 </section>
 
 <section class="social" aria-labelledby="follow">
@@ -200,7 +212,7 @@
 
 <footer>
   <p class="signoff">Into the light. Stay Truli Blessed.</p>
-  <nav aria-label="Footer"><a href="/a-light-to-glory/">A Light to Glory</a> · <a href="/daily-verse/">Daily Bible Verse</a> · <a href="/advent/">Family Advent Adventure</a> · <a href="https://www.instagram.com/truliblessedim/" rel="noopener">Instagram</a> · <a href="https://x.com/truliblessedim" rel="noopener">X</a></nav>
+  <nav aria-label="Footer"><a href="/a-light-to-glory/">A Light to Glory</a> · <a href="/today/">Today</a> · <a href="/daily-verse/">Daily Bible Verse</a> · <a href="/verses/">Bible Verses by Topic</a> · <a href="/advent/">Family Advent Adventure</a> · <a href="/quiz/">Bible Hero Quiz</a> · <a href="https://www.instagram.com/truliblessedim/" rel="noopener">Instagram</a> · <a href="https://x.com/truliblessedim" rel="noopener">X</a></nav>
   <p>© 2026 Truli Blessed Inspirational Ministries · @truliblessedim · Scripture quotations from the King James Version (KJV).</p>
 </footer>
 <script>
@@ -210,6 +222,11 @@ document.getElementById('d').textContent=Math.floor(s/86400);document.getElement
 document.getElementById('m').textContent=p(Math.floor(s%3600/60));document.getElementById('s').textContent=p(s%60);
 if(!x){document.querySelector('.countdown-card .label').innerHTML='<strong>A Light to Glory is live. Watch Episode 1!</strong>';return true;}}
 if(!u()){var i=setInterval(function(){if(u())clearInterval(i);},1000);}})();
+</script>
+<script src="/js/spark-data.js"></script>
+<script>
+(function(){var D=window.TB_DAYS;if(!D)return;var n=new Date(),b=new Date(2026,9,19),i=Math.round((new Date(n.getFullYear(),n.getMonth(),n.getDate())-b)/864e5),v=D[((i%30)+30)%30].teen,e=document.getElementById('home-spark');
+e.textContent='“'+v.text+'” ';var c=document.createElement('cite');c.textContent=v.ref+' KJV';e.appendChild(c);})();
 </script>
 </body>
 </html>
