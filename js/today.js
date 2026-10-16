@@ -4,13 +4,13 @@ var D=window.TB_DAYS,M=window.TB_MOODS;if(!D)return;
 function key(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 var now=new Date(),base=new Date(2026,9,19),n=Math.round((new Date(now.getFullYear(),now.getMonth(),now.getDate())-base)/864e5),day=D[((n%30)+30)%30];
 function esc(s){var p=document.createElement('p');p.textContent=s;return p.innerHTML}
-function q(v){return '<blockquote>“'+esc(v.text)+'” <cite>'+esc(v.ref)+' KJV</cite></blockquote>'}
+function q(v){return '<blockquote>“'+esc(v.text)+'” <cite>'+esc(v.ref)+' BSB</cite></blockquote>'}
 document.getElementById('today-date').textContent=now.toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'});
 document.getElementById('today-theme').textContent=day.theme;
 var ver='teen';
 function spark(){var v=day[ver],c=document.getElementById('spark');c.querySelector('blockquote').outerHTML=q(v);var note=document.getElementById('spark-note');
  if(v.note){note.textContent=v.note;note.hidden=false}else note.hidden=true;
- var s=c.parentNode.querySelector('.share');s.dataset.text=v.text;s.dataset.ref=v.ref+' KJV';
+ var s=c.parentNode.querySelector('.share');s.dataset.text=v.text;s.dataset.ref=v.ref+' BSB';
  document.querySelectorAll('[role=tab]').forEach(function(t){t.setAttribute('aria-selected',t.dataset.v===ver)})}
 document.querySelectorAll('[role=tab]').forEach(function(t){t.addEventListener('click',function(){ver=t.dataset.v;spark()})});
 spark();document.getElementById('story').textContent=day.story;document.getElementById('night').innerHTML=q(day.night)+'<p class="spark-note">'+esc(day.night.note)+'</p>';
