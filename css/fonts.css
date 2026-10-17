@@ -1,0 +1,5 @@
+/* Self-hosted brand fonts (SIL Open Font License 1.1; see /assets/fonts/OFL.txt). Subset to Latin; no third-party requests. */
+@font-face{font-family:"Bricolage Grotesque";src:url(/assets/fonts/Bricolage.woff2) format("woff2");font-weight:600 800;font-style:normal;font-display:swap}
+@font-face{font-family:"DM Sans";src:url(/assets/fonts/DMSans.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Lora";src:url(/assets/fonts/Lora.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Lora";src:url(/assets/fonts/Lora-Italic.woff2) format("woff2");font-weight:400 700;font-style:italic;font-display:swap}

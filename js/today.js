@@ -27,7 +27,12 @@ document.getElementById('amen').addEventListener('click',function(){var st=load(
  else{st.streak=1;msg='First spark lit! ✦'}
  st.last=t;st.best=Math.max(st.best||0,st.streak);try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}show(st,msg)});
 document.getElementById('glow-reset').addEventListener('click',function(){try{localStorage.removeItem(K)}catch(e){}g.hidden=true});
+// The Walk entry (spec §2.1). OFF until launch: flip WALK_LIVE to true per walk-worker/LAUNCH.md.
+// Local preview only: http://localhost:8765/today/?walk=1
+var WALK_LIVE=false,walkOn=WALK_LIVE||(/^(localhost|127\.0\.0\.1)$/.test(location.hostname)&&/[?&]walk=1/.test(location.search));
+function walkLink(mood){if(!walkOn||['anxious','thankful','tired','brave'].indexOf(mood)<0)return '';
+ return '<p class="walk-cta"><a class="btn walk-btn" href="/walk/?mood='+mood+'&amp;from=today">Start your walk today</a><br><span class="fine">Lumi will light the path. Your walk stays on this device.</span></p>'}
 document.querySelectorAll('.mood').forEach(function(b){b.addEventListener('click',function(){var m=M.filter(function(x){return x.id===b.dataset.m})[0];
  document.querySelectorAll('.mood').forEach(function(o){o.setAttribute('aria-pressed',o===b)});
- document.getElementById('mood-out').innerHTML='<div class="vcard">'+q(m)+'<p>'+esc(m.note)+'</p></div>'})});
+ document.getElementById('mood-out').innerHTML='<div class="vcard">'+q(m)+'<p>'+esc(m.note)+'</p></div>'+walkLink(b.dataset.m)})});
 })();
