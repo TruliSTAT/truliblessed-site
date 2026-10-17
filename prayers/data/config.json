@@ -1,0 +1,11 @@
+{
+ "GATE_MODE": "off",
+ "API_BASE_LOCAL": "",
+ "API_BASE": "",
+ "SIGNIN_BANDS": [
+  "18+",
+  "16-17",
+  "13-15c"
+ ],
+ "SHOW_EMPTY_TOPICS": true
+}
